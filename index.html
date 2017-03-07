@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trains</title>
+	<meta charset="UTF-8">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>		 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class ="container">
+
+
+	<div class="row jumbotron">
+		<div class="col-lg-12">
+			<h1 class="text-center main-head">Anytime is Train Time</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+		</div>
+	</div>
+	<div class="row">
+		
+	</div>
+
+	<div class="panel panel-primary">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Current Train Schedule</h3>
+	  </div>
+	  <div class="panel-body">
+	  	<div class="row schedule-row">
+	  		<div class="col-md-3">
+	  			<p><strong> Train Name </strong></p>	
+	  		</div>
+			<div class="col-md-2">	
+				<p><b> Destination </b></p>	
+	  		</div>
+			<div class="col-md-2">	
+				<p><b> Frequency (min) </b></p>	
+	  		</div>
+			<div class="col-md-2">
+				<p><b> Next Arrival </b></p>		
+	  		</div>
+			<div class="col-md-2">	
+				<p><b> Minutes Away </b></p>	
+	  		</div>
+	  		<div class="col-md-1">	
+	  		</div>
+	  	</div>
+	  	<div class="row schedule-row">
+	  		<div class="col-md-3 name-display">
+	  				
+	  		</div>
+			<div class="col-md-2 destination-display">	
+					
+	  		</div>
+			<div class="col-md-2 frequency-display">	
+					
+	  		</div>
+			<div class="col-md-2 arrival-display">
+						
+	  		</div>
+			<div class="col-md-2 away-display">		
+	  		</div>
+	  		<div class="col-md-1">
+
+	  		</div>
+	  	</div>
+	    
+	  </div>
+	</div>
+	<div class="panel panel-primary">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Add Train</h3>
+	  </div>
+	  <div class="panel-body">
+	    <form class="col-lg-12 train-form">
+			<div class="train-name">
+				<label for="name-input">Train Name</label>
+				<input type="text" class="form-control form-input name-input">
+			</div>
+			<div class="train-name">
+				<label for="destination-input">Destination</label>
+				<input type="text" class="form-control form-input destination-input">
+			</div>
+			<div class="train-name">
+				<label for="time-input">First Train Time (HH:mm - military time) </label>
+				<input type="text" class="form-control form-input time-input">
+			</div>
+			<div class="train-name">
+				<label for="frequency-input">Frequency (min) </label>
+				<input type="text" class="form-control form-input frequency-input">
+			</div>
+			<button type="button" class="btn btn-primary" id="submit-train">Submit</button>
+
+		</form>
+	  </div>
+	</div>
+		
+	
+
+
+
+	
+				
+
+	
+
+
+<script src="assets/javascript/game.js"> </script>	
+</body>
+
+</html>
