@@ -30,6 +30,8 @@
 
 /*Main Functions------------------*/
 
+/*Never quite got through the moment.js stuff.  
+Need to review again in the future. x.x */
 
 
 /*Main Processes------------------*/
